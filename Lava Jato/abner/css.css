@@ -1,0 +1,46 @@
+table{
+	margin: 1px;	
+}
+.thead{
+	background-color: #999999;
+	color: white;
+	font: bold;
+}
+
+th, td{
+	width:5px;
+	height: 70px;
+	
+	padding: 0.3px;
+	font-size: 15.3px;
+	
+}
+.cor2{
+	background-color: greenyellow;
+}
+.cor{
+	background-color: red;
+	color: white;
+	font: bold;
+	text-align: center;
+}
+.cor3{
+	background-color: red;
+	color: white;
+	text-align: center;
+	
+}
+td {
+	max-width: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+  }
+  td:hover {
+	max-width: 200px;
+	max-width: 200px;
+	font-size: 20px;
+	overflow: auto;
+	text-overflow: ellipsis;
+	white-space: initial;
+}

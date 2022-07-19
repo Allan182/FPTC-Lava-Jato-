@@ -1,9 +1,105 @@
+html {
+	scroll-behavior: smooth;
+}
+
 .banner {
-width: 100%;
-height: auto;
+	width: 100%;
+	height: auto;
+}
+
+.localizacao {
+	margin-top: -3.5px;
+	width: 940px;
+	margin: 0 auto;
+}
+
+.fundo-localizacao{
+	width: 100%;
+	background: url(../imagens-home/bg.jpg);
+	margin-top: -3px;
+}
+.servicos{
+	top: -3.5px;
+	position: relative;
+	width: 100%;
+	height: 300px;
+	background: url("../imagens-geral/bg.jpg");
+}
+.lav-externa {
+	position: absolute;
+	width: 150px;
+	margin-left: 5%;
+	top: 20%;
+}
+.tex_Lav_ext {
+	position: absolute;
+	margin-left: 5%;
+	top: 70%;
+	color: white;
+	font-size: 20px;
 }
 
 
+.lav-interna {
+	position: absolute;
+	width: 150px;
+	margin-left: 25%;
+	top: 20%;
+}
+
+.tex_Lav_int {
+	position: absolute;
+	margin-left: 25%;
+	top: 70%;
+	color: white;
+	font-size: 20px;
+
+}
+.lav-completa {
+	position: absolute;
+	width: 150px;
+	margin-left: 45%;
+	top: 20%;
+}
+.tex_Lav_com {
+	position: absolute;
+	margin-left: 45%;
+	top: 70%;
+	color: white;
+	font-size: 20px;
+}
+.lav-Ext_c_Pol {
+	position: absolute;
+	width: 150px;
+	margin-left: 65%;
+	top: 20%;
+}
+.tex_LavExt_c_Pol {
+	position: absolute;
+	margin-left: 65%;
+	top: 70%;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+.lav-com_c_Pol {
+	position: absolute;
+	width: 150px;
+	margin-left: 85%;
+	top: 20%;
+}
+.tex_LavExt_compl_c_Pol {
+	position: absolute;
+	margin-left: 85%;
+	top: 70%;
+	color: white;
+	font-size: 20px;
+	text-align: center;
+}
+iframe{
+	margin: 55px 0;
+	box-shadow: 5px 5px 25px #22222252;
+}
 
 
 

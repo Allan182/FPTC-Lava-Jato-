@@ -1,39 +1,60 @@
 /* Seletores do corpo --------------------------------------*/
-form{
+form {
 	width: 940px;
 	margin: 0 auto;
 	padding: 40px 0;
+	text-align: center;
 }
-form label{
+
+form label {
 	display: block;
 	margin-bottom: 10px;
-	font-size: 18px;
+	font-size: 22px;
 }
-form legend{
+
+form legend {
 	display: block;
 	margin: 0px 0px 0px 0px;
 	font-size: 18px;
 }
-fieldset{
+
+fieldset {
 	padding: 10px;
 
 }
-.input-block{
+
+.input-block {
 	display: block;
 	margin-bottom: 20px;
-	font-size: 18px;
+	font-size: 22px;
 	padding: 4px 7px;
 	width: 50%;
 	font-family: 'Montserrat', sans-serif;
+	margin: 0 auto 20px auto;
+	text-align: center;
+	background-color: rgba(128, 128, 128, 0.24)
 }
 
-.input-inline{
-	margin-bottom: 0px;
-	margin-right: 10px;
-	font-size: 18px;
-	font-family: 'Montserrat', sans-serif;
+.imagem-contato {
+	width: 100%;
+	height: auto;
+	position: relative;
 }
-select{
+
+.caixa-contato {
+	width: 40%;
+	height: 220px;
+	background-color: rgb(0, 0, 0);
+	display: inline-block;
+	z-index: 2;
+	position: absolute;
+	left: 30%;
+	top: 175px;
+	border: 2px solid rgb(255, 255, 255);
+	opacity: 0.5;
+}
+
+select {
 	margin-bottom: 20px;
 	width: 250px;
 	height: 30px;
@@ -41,34 +62,92 @@ select{
 	font-family: 'Montserrat', sans-serif;
 }
 
-.enviar{
+.enviar {
 	width: 40%;
 	padding: 15px 0;
-	background-color: orange;
+	background-color: rgb(0, 0, 255);
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
 	border: none;
-	border-radius: 5px;
+	border-radius: 10px;
 	transition: 1s all;
 	cursor: pointer;
 	font-family: 'Montserrat', sans-serif;
 }
-.enviar:hover{
-	background-color: red;
-	transform: scale(1.2) rotate(4deg);
+
+.enviar:hover {
+	background-color: darkslategrey;
+	transform: scale(1.2);
 }
-table{
-	margin: 40px auto;	
+
+table {
+	margin: 40px auto;
 }
-thead{
+
+thead {
 	background-color: #999999;
 	color: white;
 	font: bold;
 }
-th, td{
-	width:300px;
+
+th,
+td {
+	width: 300px;
 	border: 1px solid #999999;
 	padding: 3px;
 	font-size: 20px;
+}
+
+.texto-caixa-contato {
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	padding: 1px;
+	margin-top: 15px;
+}
+
+
+.caixa-informacoes {
+	width: 49%;
+	display: inline-block;
+}
+
+.caixa-rua {
+	padding-bottom: 10px;
+}
+
+.caixa-sub-informacoes {
+	padding: 5px;
+}
+
+.titulo-caixa-contato {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 20px;
+	color: rgb(255, 255, 255);
+	opacity: 1;
+}
+
+.caixa-centro {
+	padding-bottom: 8px;
+}
+
+.form-action{
+	display: inline-block;
+}
+
+.table-form{
+	display: inline-block;
+	width: 49%;
+	height: 250px;
+}
+
+
+.caixa-endereço {
+	width: 50%;
+	display: inline-block;
+	opacity: 1;
+	color: rgb(255, 255, 255);
 }
