@@ -1,14 +1,15 @@
 /* Cabeçalho --------------------------------------*/
 
 header {
+	position: sticky;
+	top: 0;
 	width: auto;
-	height: 170px;
-	background:  #0a0a0a;
+	height: 175px;
+	background: #030303;
 	padding-top: 20px;
 }
 
 .caixa {
-	
 	position: relative;
 	width: 100%;
 	margin: 0 auto;
@@ -28,20 +29,25 @@ nav li {
 }
 
 nav a {
-	text-transform: uppercase;
+	margin-right: 25px;
 	color: #ffffff;
 	font-weight: bold;
 	font-size: 22px;
 	text-decoration: none;
 	border: 5px solid rgba(255, 255, 0, 0);
+	border-radius: 5px;
+	margin-bottom: 50px;
 }
 
 nav a:hover {
-	border: 2px solid rgba(255, 255, 0, 0.823);
-	border-radius: 1px;
+	padding: 4.5px;
+	margin-right: 25px;
+	transition: 0.5s;
+	border: 0.1px solid rgba(255, 255, 0, 0.823);
+	border-radius: 5px;
 	color: #ddff00;
-	background-color: rgba(255, 255, 0, 0.117);
-	
+	background-color: rgba(255, 255, 0, 0.041);
+
 }
 
 .logo {
@@ -49,19 +55,22 @@ nav a:hover {
 	padding-top: 25px;
 	margin-left: 100px;
 }
-.header-ancora{
+
+.header-ancora {
 	text-align: center;
 	margin-left: 50px;
-	background-color: aqua;
 	width: 120%;
 	height: 50px;
-	position: relative;
+	position: relative;	
+	bottom: 30px;
 }
+
 /* Seletores do corpo --------------------------------------*/
 
 /* Seletores do rodapé --------------------------------------*/
 
 footer {
+	margin-top: -3.5px;
 	text-align: center;
 	background: url("../imagens-geral/bg.jpg");
 	padding: 40px 0;
