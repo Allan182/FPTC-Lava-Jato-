@@ -1,0 +1,74 @@
+/* Seletores do corpo --------------------------------------*/
+form{
+	width: 940px;
+	margin: 0 auto;
+	padding: 40px 0;
+}
+form label{
+	display: block;
+	margin-bottom: 10px;
+	font-size: 18px;
+}
+form legend{
+	display: block;
+	margin: 0px 0px 0px 0px;
+	font-size: 18px;
+}
+fieldset{
+	padding: 10px;
+
+}
+.input-block{
+	display: block;
+	margin-bottom: 20px;
+	font-size: 18px;
+	padding: 4px 7px;
+	width: 50%;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.input-inline{
+	margin-bottom: 0px;
+	margin-right: 10px;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+}
+select{
+	margin-bottom: 20px;
+	width: 250px;
+	height: 30px;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.enviar{
+	width: 40%;
+	padding: 15px 0;
+	background-color: orange;
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 5px;
+	transition: 1s all;
+	cursor: pointer;
+	font-family: 'Montserrat', sans-serif;
+}
+.enviar:hover{
+	background-color: red;
+	transform: scale(1.2) rotate(4deg);
+}
+table{
+	margin: 40px auto;	
+}
+thead{
+	background-color: #999999;
+	color: white;
+	font: bold;
+}
+th, td{
+	width:300px;
+	border: 1px solid #999999;
+	padding: 3px;
+	font-size: 20px;
+}

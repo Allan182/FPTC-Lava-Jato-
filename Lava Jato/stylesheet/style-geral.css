@@ -1,0 +1,75 @@
+/* Cabeçalho --------------------------------------*/
+
+header {
+	width: auto;
+	height: 170px;
+	background:  #0a0a0a;
+	padding-top: 20px;
+}
+
+.caixa {
+	
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 200px;
+	padding-bottom: 50px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	text-transform: uppercase;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+	border: 5px solid rgba(255, 255, 0, 0);
+}
+
+nav a:hover {
+	border: 2px solid rgba(255, 255, 0, 0.823);
+	border-radius: 1px;
+	color: #ddff00;
+	background-color: rgba(255, 255, 0, 0.117);
+	
+}
+
+.logo {
+	width: 300px;
+	padding-top: 25px;
+	margin-left: 100px;
+}
+.header-ancora{
+	text-align: center;
+	margin-left: 50px;
+	background-color: aqua;
+	width: 120%;
+	height: 50px;
+	position: relative;
+}
+/* Seletores do corpo --------------------------------------*/
+
+/* Seletores do rodapé --------------------------------------*/
+
+footer {
+	text-align: center;
+	background: url("../imagens-geral/bg.jpg");
+	padding: 40px 0;
+
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}
