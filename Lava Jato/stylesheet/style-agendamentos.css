@@ -4,7 +4,6 @@ main {
 	background-color: rgb(230, 199, 199);
 }
 
-
 .conteudo-produtos{
 	width: 940px;
 	margin: 0 auto;
@@ -39,4 +38,20 @@ main {
 .produtos h2 {
 	font-size: 30px;
 	font-weight: bold;
+}
+.table{
+	width: 100%;
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	margin: -3px -3px;
+}
+table{
+	position: relative;
+	width: 100%;
+}
+.dias-funcionamento{
+	font-size: 22px;
+	font-weight: bold;
+	padding-top: 35px;
 }
