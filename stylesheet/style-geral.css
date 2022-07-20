@@ -1,0 +1,95 @@
+
+
+/* Cabeçalho --------------------------------------*/
+
+
+
+header {
+	position: sticky;
+	top: 0;
+	width: auto;
+	height: 100px;
+	background: #030303;
+	padding-top: 20px;
+	border-bottom: 0.1px solid rgba(85, 85, 85, 0.116);
+	z-index: 3;
+}
+
+.caixa {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px
+}
+
+nav {
+	position: absolute;
+	top: 110px;
+	right: 200px;
+	padding-bottom: 50px;
+}
+
+nav li {
+	display: inline;
+	margin: 0 0 0 15px;
+}
+
+nav a {
+	margin-right: 25px;
+	color: #ffffff;
+	font-weight: bold;
+	font-size: 22px;
+	text-decoration: none;
+	border: 5px solid rgba(255, 255, 0, 0);
+	border-radius: 5px;
+	margin-bottom: 50px;
+}
+
+nav a:hover {
+	padding: 4.5px;
+	margin-right: 25px;
+	transition: 0.5s;
+	border: 0.1px solid rgba(255, 255, 0, 0.823);
+	border-radius: 5px;
+	color: #ddff00;
+	background-color: rgba(255, 255, 0, 0.041);
+
+}
+
+.logo {
+	width: 100px;
+	padding-top: 10px;
+	margin-left: 100px;
+
+}
+
+.tamanho-logo{
+	width: 180%;
+}
+.header-ancora {
+	text-align: center;
+	margin-left: 50px;
+	width: 120%;
+	height: 50px;
+	position: relative;	
+	bottom: 70px;
+}
+
+/* Seletores do corpo --------------------------------------*/
+
+/* Seletores do rodapé --------------------------------------*/
+
+footer {
+	position: relative;
+	margin-top: -3.5px;
+	text-align: center;
+	background: url("../imagens-geral/bg.jpg");
+	padding: 40px 0;
+
+}
+
+.copyright {
+	color: #FFFFFF;
+	font-size: 13px;
+	margin: 20px 0 0 0;
+}

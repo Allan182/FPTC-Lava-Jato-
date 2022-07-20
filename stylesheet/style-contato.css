@@ -1,0 +1,203 @@
+/* Seletores do corpo --------------------------------------*/
+form {
+	width: 940px;
+	margin: 0 auto;
+	padding: 40px 0;
+	text-align: center;
+	display: inline-block;
+}
+
+form label {
+	display: block;
+	margin-bottom: 10px;
+	font-size: 22px;
+}
+
+form legend {
+	display: block;
+	margin: 0px 0px 0px 0px;
+	font-size: 18px;
+}
+
+fieldset {
+	padding: 10px;
+
+}
+.input-block {
+	display: block;
+	margin-bottom: 20px;
+	font-size: 22px;
+	padding: 4px 7px;
+	width: 50%;
+	font-family: 'Montserrat', sans-serif;
+	margin: 0 auto 20px auto;
+	text-align: center;
+	background-color: rgb(36, 36, 36);
+	color: white;
+}
+input::placeholder{
+	color:rgba(255, 255, 255, 0.336)
+}
+textarea::placeholder{
+	color: rgba(255, 255, 255, 0.336)
+}
+.imagem-contato {
+	width: 100%;
+	height: auto;
+	position: relative;
+}
+
+.caixa-contato {
+	width: 40%;
+	height: 220px;
+	background-color: rgb(0, 0, 0);
+	display: inline-block;
+	z-index: 2;
+	position: absolute;
+	left: 30%;
+	top: 175px;
+	border: 2px solid rgb(255, 255, 255);
+	opacity: 0.5;
+}
+
+select {
+	margin-bottom: 20px;
+	width: 250px;
+	height: 30px;
+	font-size: 18px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.enviar {
+	width: 40%;
+	padding: 15px 0;
+	background-color: rgb(0, 0, 0);
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	border: none;
+	border-radius: 10px;
+	transition: 1s all;
+	cursor: pointer;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+.enviar:hover {
+	width: 41%;
+	transition: 0.5s;
+	background-color: rgb(31, 31, 31);
+}
+
+table {
+	margin: 40px auto;
+	display: inline-block;
+}
+
+thead {
+	background-color: #999999;
+	color: white;
+	font: bold;
+}
+
+th,
+td {
+	width: 300px;
+	border: 1px solid #ffffff8e;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	font-size: 22px;
+	padding: 18.5px 3px 14.5px 3px;
+	text-align: center;
+	color: white;
+	background-color: rgba(0, 0, 0, 0.774);
+}
+
+.texto-caixa-contato {
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	padding: 1px;
+	margin-top: 15px;
+}
+
+
+.caixa-informacoes {
+	width: 49%;
+	display: inline-block;
+}
+
+.caixa-rua {
+	padding-bottom: 10px;
+}
+
+.caixa-sub-informacoes {
+	padding: 5px;
+}
+
+.titulo-caixa-contato {
+	font-size: 32px;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 20px;
+	color: rgb(255, 255, 255);
+	opacity: 1;
+}
+
+.caixa-centro {
+	padding-bottom: 8px;
+}
+
+.form-action {
+	display: inline-block;
+	width: 50%;
+	position: relative;
+	margin-top: 5px;
+}
+
+.table-form {
+	display: inline-block;
+	width: 39%;
+	height: 475px;
+	position: relative;
+	padding-bottom: 38%;
+}
+
+
+.caixa-endereço {
+	width: 50%;
+	display: inline-block;
+	opacity: 1;
+	color: rgb(255, 255, 255);
+}
+
+.caixa-contat0{
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	background-color: rgba(51, 51, 51, 0.938);
+	border: 2px solid rgba(0, 0, 0, 0.699);
+	width: 78%;
+	margin: 0 auto;
+	margin-top: 30px;
+	padding: 10px 0;
+	border-radius: 3px;
+	border-radius: 5px;
+}
+.titulo-contat0{
+	font-size: 35px;
+	padding: 2px 10px;
+}
+.tela-contato-quadrado{
+	width: 75%;
+	margin: 0 auto;
+	height: auto;
+	background: linear-gradient(180deg , rgba(151, 151, 151, 0.445), rgb(80, 80, 80));
+	border: 1px solid black;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}

@@ -1,0 +1,66 @@
+body {
+	border: 0px;
+	margin: 0px;
+}
+
+table {
+	margin: 1px;
+}
+
+.thead {
+	background-color: #999999;
+	color: white;
+	font: bold;
+	
+}
+
+th,
+td {
+	width: 5px;
+	height: 70px;
+	padding: 1px;
+	font-size: 15px;
+	border: 0.1px solid rgb(75, 50, 50);
+
+}
+
+th {
+	font-size: 14px;
+}
+
+.cor2 {
+	background-color: greenyellow;
+}
+
+.cor {
+	background-color: red;
+	color: white;
+	font: bold;
+	text-align: center;
+}
+
+.cor3 {
+	background-color: red;
+	color: white;
+	text-align: center;
+
+}
+
+td {
+	max-width: 5px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+td:hover {
+	max-width: 200px;
+	max-width: 200px;
+	font-size: 20px;
+	overflow: auto;
+	box-shadow: -4px 4px 10px black;
+	white-space: initial;
+}
+tr{
+	justify-content: center;
+}
