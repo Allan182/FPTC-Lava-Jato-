@@ -1,66 +1,79 @@
 body {
-	border: 0px;
-	margin: 0px;
+	background-color: rgb(98, 89, 83);
+}
+
+header {
+	position: relative;
 }
 
 table {
-	margin: 1px;
-}
-
-.thead {
-	background-color: #999999;
-	color: white;
-	font: bold;
-	
+	margin-left: 7%;
+	margin-bottom: 30px;
+	margin-top: 30px;
+	width: 85%;
+	background-color: rgb(255, 255, 255);
+	position: relative;
 }
 
 th,
 td {
-	width: 5px;
-	height: 70px;
-	padding: 1px;
-	font-size: 15px;
-	border: 0.1px solid rgb(75, 50, 50);
+	width: 6px;
+	height: 55px;
+	border: 0.5px solid rgb(68, 69, 69);
+	max-width: 5.5px;
+	margin: 0;
+}
 
+.thead {
+	background-color: rgb(30, 29, 36);
+	color: rgb(223, 217, 217);
+	border: 0ex;
+}
+.vejaHora{
+	position: sticky;
+	top: 0;
+	width: auto;
+	background-color: rgb(30, 29, 36);
+	list-style-type: none;
 }
 
 th {
-	font-size: 14px;
+	font-size: 12px;
+	max-width: 6px;
 }
 
 .cor2 {
-	background-color: greenyellow;
+	background-color: rgb(76, 136, 169);
 }
 
 .cor {
-	background-color: red;
-	color: white;
+	background-color: rgb(178, 100, 12);
+	color: rgb(223, 217, 217);
 	font: bold;
 	text-align: center;
-}
-
-.cor3 {
-	background-color: red;
-	color: white;
-	text-align: center;
-
-}
-
-td {
-	max-width: 5px;
 	overflow: hidden;
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
 
-td:hover {
-	max-width: 200px;
-	max-width: 200px;
-	font-size: 20px;
-	overflow: auto;
+td div {
+	width: 100%;
+	font-size: 18px;
+}
+
+td div:hover {
+	position: absolute;
+	padding: 5px;
+	padding-top: 10px;
+	width: 100px;
+	height: 45px;
+	font-size: 10px;
 	box-shadow: -4px 4px 10px black;
 	white-space: initial;
+	border-radius: 7px;
+	transform: scale(2, 2);
+	background-color: rgb(81, 48, 11);
 }
-tr{
-	justify-content: center;
+.tamanho{
+	font-size: 20px;
 }
