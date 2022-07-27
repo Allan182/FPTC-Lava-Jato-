@@ -1,0 +1,73 @@
+
+body {
+	width: 100%;
+    color: rgb(255, 255, 255);
+    font-family: calibri;
+    
+}
+main{
+    width: 100%;
+   
+}
+.posicRelatorio{
+    padding-top: 5px;
+    position: relative;
+    margin: 0 auto;
+    width: 940px;
+    height: 1200px;
+    background-color: rgb(98, 89, 83);
+}
+.busca{
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    width: 300px;
+    height: 250px;
+    border-radius: 60px;
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 4%;
+    background-color: rgb(70, 64, 49);
+}
+.resultados{
+    text-align: center;
+    font-size: 16px;
+    margin: 0 auto;
+    font-weight: 300;
+    display: block;
+    width: 500px;
+    height: 68%;
+    background: linear-gradient( rgb(70, 64, 49), rgb(31, 29, 24));
+    border-radius: 20px;
+    margin-top: 4%;
+}
+.tituloPesq{
+    padding: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.tituloRel{
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 22px;
+    padding-top: 8px;
+}
+input{
+    margin-top: 60px;
+
+}
+hr{
+    margin-bottom: 30px;
+}
+#inData{
+    border: none;
+    border-bottom: 2px solid rgb(137, 135, 135);
+    background-color: rgb(70, 64, 49);
+    width: 35px;
+    color: rgb(137, 135, 135);
+    border-radius: 5px;
+}
+pre{
+    font-size: 21px;
+}
+

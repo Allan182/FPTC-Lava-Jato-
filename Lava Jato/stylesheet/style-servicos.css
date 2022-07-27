@@ -1,92 +1,124 @@
+
 .servicos {
     margin: 0 auto;
     position: relative;
-    background-color: rgb(144, 189, 174);
-    width: 80%;
+    background-color: rgb(38, 40, 39);
+    width: 60%;
 }
 
-.lav-externa {
-    position: absolute;
-    margin-top: 25px;
-    width: 20%;
-    left: 50px;
-}
-
-.tex_Lav_ext {
-    position: absolute;
-    margin-top: 25px;
-    width: 20%;
-    left: 350px;
-}
-
-
-.lav-interna {
-    position: absolute;
-    margin-top: 300px;
-    width: 20%;
-    left: 50px;
-}
-
-.tex_Lav_int {
-    position: absolute;
-    margin-top: 190px;
-    width: 20%;
-    left: 350px;
-
-}
-
-.lav-completa {
-    position: absolute;
-    margin-top: 575px;
-    width: 20%;
-    left: 350px;
-}
-
-.tex_Lav_com {
-    position: relative;
-    margin-left: 45%;
-    top: 70%;
-    color: white;
-    font-size: 20px;
-}
-
-.lav-Ext_c_Pol {
-    position: relative;
-    width: 20%;
-    margin-left: 65%;
-    top: 20%;
-}
-
-.tex_LavExt_c_Pol {
-    position: relative;
-    margin-left: 65%;
-    top: 70%;
-    color: white;
-    font-size: 20px;
-    text-align: center;
-}
-
-.lav-com_c_Pol {
-    position: relative;
-    width: 20%;
-    margin-left: 85%;
-    top: 20%;
-}
-
-.tex_LavExt_compl_c_Pol {
-    position: relative;
-    margin-left: 85%;
-    top: 70%;
-    color: white;
-    font-size: 20px;
-    text-align: center;
+.titulo {
+    font-size: 40px;
 }
 
 .titulo-servicos {
     text-align: center;
     background-color: grey;
     padding: 2%;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
 
+}
+
+.lav-externa {
+    width: 23%;
+    float: left;
+    margin: 3% 3.5% 2% 5%;
+}
+
+.tex_Lav_ext {
+    padding-top: 15px;
+    font-size: 24px;
+    text-align: justify;
+    margin-right: 5%;
+    margin-top: 5%;
+}
+
+.lav-interna {
+    width: 23%;
+    float: right;
+    margin: 3% 3.5% 2% 5%;
+
+}
+
+.tex_Lav_int {
+    padding-top: 25px;
+    font-size: 24px;
+    text-align: justify;
+    margin-left: 5%;
+    margin-top: 5%;
+
+}
+
+.lav-completa {
+    width: 23%;
+    float: left;
+    margin: 3% 3.5% 2% 5%;
+
+}
+
+.tex_Lav_com {
+    padding-top: 25px;
+    font-size: 24px;
+    text-align: justify;
+    margin-right: 5%;
+    margin-top: 5%;
+
+}
+
+.lav-Ext_c_Pol {
+    width: 23%;
+    float: right;
+    margin: 3% 3.5% 2% 5%;
+}
+
+.tex_LavExt_c_Pol {
+    padding-top: 15px;
+    font-size: 24px;
+    text-align: justify;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+.lav-com_c_Pol {
+    width: 23%;
+    float: left;
+    margin: 3% 3.5% 2% 5%;
+}
+
+.tex_LavExt_compl_c_Pol {
+    padding-top: 25px;
+    font-size: 24px;
+    text-align: justify;
+    margin-right: 5%;
+    margin-top: 5%;
+    padding-bottom: 5%;
+}
+
+body {
+    color: white;
+}
+
+strong {
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.secction-lav-interna {
+    background-color: grey;
+    padding-bottom: 15px;
+}
+
+.secction-lav-ext {
+    background-color: grey;
+    padding-bottom: 25px;
+}
+.titulo-servicos-testados{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+body{
+    font-family: calibri;
 }

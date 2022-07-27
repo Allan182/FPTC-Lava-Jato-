@@ -1,4 +1,11 @@
+
+
 /* Seletores do corpo --------------------------------------*/
+
+body{
+    font-family: calibri;
+}
+
 form {
 	width: 940px;
 	margin: 0 auto;

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Clean Wash | Relátorio </title>
+    <link rel="stylesheet" href="stylesheet/reset.css">
+    <link rel="stylesheet" href="stylesheet/style-geral.css">
+    <link rel="stylesheet" href="stylesheet/style-relatorio.css">
+    <link rel="shortcut icon" href="imagens-geral/Lg-Att-2.0.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <section class="teste">
+            <div class="caixa">
+                <h1>
+                    <div class="logo">
+                        <a href="index.html"> <img src="imagens-geral/Lg Att 2.0.svg" class="tamanho-logo"> </a>
+                    </div>
+                </h1>
+                <nav>
+                    <ul>
+                        <div class="header-ancora">
+                            <li><a href="index.html"> Home </a></li>
+                            <li><a href="agendamentos.html"> Agenda </a></li>
+                            <li><a href="index.html#local"> Localização </a></li>
+                            <li><a href="servicos.html"> Serviços </a></li>
+                            <li><a href="relatorio.html"> Relatórios </a></li>
+                            <li><a href="contato.html"> Contato </a></li>
+                        </div>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+
+    </header>
+    <main>
+        <section class="posicRelatorio">
+            <div class="busca">
+                <h1 class="tituloPesq">Pesquise o Relatório Diário</h1>
+                <p>Digite o dia: <input type="number" id="inData">/08/2022</p>
+                <p><input type="button" value="PROCURAR" id="btProcurar"></p>
+            </div>
+
+            <div class="resultados">
+                <h1 class="tituloRel">Relatorio para serviços do dia em Agosto 2022</h1>
+                <hr>
+                <pre id="autSaida"> </pre>
+
+            </div>
+        </section>
+
+    </main>
+    <footer>
+        <img src="imagens-geral/Lg Att 2.0.svg">
+        <p class="copyright">&copy; Copyright Car Wash </p>
+    </footer>
+    <script src="js/vetores.js"></script>
+    <script src="js/javaSRelatorio.js"></script>
+</body>
+
+</html>

@@ -1,5 +1,9 @@
+
 body {
-	background-color: rgb(98, 89, 83);
+	
+	background-color: rgb(66, 55, 55);
+	font-family: calibri;
+	
 }
 
 header {
@@ -76,4 +80,7 @@ td div:hover {
 }
 .tamanho{
 	font-size: 20px;
+}
+.table{ 
+	background-color: rgb(66, 55, 55);;
 }

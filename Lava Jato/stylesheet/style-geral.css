@@ -2,7 +2,9 @@
 
 /* Cabeçalho --------------------------------------*/
 
-
+main{
+	background-color: rgb(235, 235, 235);
+}
 
 header {
 	position: sticky;
@@ -14,7 +16,11 @@ header {
 	border-bottom: 0.1px solid rgba(85, 85, 85, 0.116);
 	z-index: 3;
 }
-
+.teste{
+	width: 90%;
+	height: 100%;
+	margin-left: 5%;
+}
 .caixa {
 	position: relative;
 	width: 100%;
@@ -24,9 +30,8 @@ header {
 
 nav {
 	position: absolute;
-	top: 110px;
-	right: 200px;
-	padding-bottom: 50px;
+	top: 45px;
+	right: 100px;
 }
 
 nav li {
@@ -42,7 +47,6 @@ nav a {
 	text-decoration: none;
 	border: 5px solid rgba(255, 255, 0, 0);
 	border-radius: 5px;
-	margin-bottom: 50px;
 }
 
 nav a:hover {
@@ -56,24 +60,13 @@ nav a:hover {
 
 }
 
-.logo {
-	width: 100px;
-	padding-top: 10px;
-	margin-left: 100px;
+.tamanho-logo {
+	width: 200px;
+	height: 80px;
+	margin-left: 5%;
 
 }
 
-.tamanho-logo{
-	width: 180%;
-}
-.header-ancora {
-	text-align: center;
-	margin-left: 50px;
-	width: 120%;
-	height: 50px;
-	position: relative;	
-	bottom: 70px;
-}
 
 /* Seletores do corpo --------------------------------------*/
 
