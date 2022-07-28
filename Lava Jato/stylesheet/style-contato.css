@@ -3,7 +3,7 @@
 /* Seletores do corpo --------------------------------------*/
 
 body{
-    font-family: calibri;
+    font-family: 'calibri';
 }
 
 form {
@@ -72,11 +72,12 @@ select {
 	width: 250px;
 	height: 30px;
 	font-size: 18px;
-	font-family: 'Montserrat', sans-serif;
 }
 
 .enviar {
-	width: 40%;
+	width: 100%;
+	display: inline-block;
+	margin: 0 50%;
 	padding: 15px 0;
 	background-color: rgb(0, 0, 0);
 	color: white;
@@ -86,17 +87,14 @@ select {
 	border-radius: 10px;
 	transition: 1s all;
 	cursor: pointer;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	margin: 0 auto;
 	margin-bottom: 35px;
+	margin-top: 30px;
+	
 }
 
 .enviar:hover {
-	width: 41%;
 	transition: 0.5s;
-	background-color: rgb(31, 31, 31);
+	background-color: rgb(194, 126, 0);
 }
 
 table {
@@ -207,4 +205,8 @@ td {
 	border: 1px solid black;
 	margin-top: 15px;
 	margin-bottom: 15px;
+}
+textarea{
+	padding-bottom: 5px;
+	height: 260px;
 }

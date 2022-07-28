@@ -78,21 +78,31 @@
             <div class="caixa-contat0">
                 <h1 class="titulo-contat0">Entre em Contato por Aqui! </h1>
             </div>
-            <form action="mailto:allan.furlani@hotmail.com" method="post" class="form-action">
 
-                <input type="text" id="nomeSobrenome" class="input-block" placeholder="Nome e Sobrenome" required>
 
-                <input type="email" id="email" class="input-block" required placeholder="E-mail">
+            <form action="mailto:allan.furlani@hotmail.com" method="POST" enctype="text/plain" class="form-action">
 
-                <input type="tel" id="telefone" class="input-block" required placeholder="Telefone">
+                <input type="text" id="nomeSobrenome" class="input-block" placeholder="Nome e Sobrenome" name="Nome"
+                    required>
 
-                <input type="tel" id="telefone" class="input-block" required placeholder="Assunto">
+                <input type="email" id="email" class="input-block" required placeholder="E-mail" name="Email">
 
-                <textarea name="" id="mensagem" cols="30" rows="10" class="input-block" required
-                    placeholder="Mensagem"></textarea>
+                <input type="tel" id="telefone" class="input-block" required placeholder="Telefone" name="Telefone">
+
+                <input type="tel" id="telefone" class="input-block" required placeholder="Assunto" name="Assunto">
+
+                <textarea name="" id="mensagem" cols="30" rows="10" class="input-block" required placeholder="Mensagem"
+                    name="Mensagem">
+                </textarea>
+
+
+                <input type="submit" value="Envie Seu Pedido Aqui! " class="enviar">
+
 
             </form>
+
             <table class="table-form">
+
                 <thead>
                     <tr>
                         <th colspan="2">Horários de Funcionamento</th>
@@ -134,7 +144,6 @@
                 </tbody>
             </table>
 
-            <input type="submit" value="Enviar Formulário" class="enviar">
         </section>
     </main>
 
