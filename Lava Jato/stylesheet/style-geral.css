@@ -86,3 +86,51 @@ footer {
 	font-size: 13px;
 	margin: 20px 0 0 0;
 }
+
+@media screen and (max-width:480px){
+	 .caixa,  .banner {
+		width: auto;
+	}
+	.logo, header  {
+		width:100%;
+	}
+	h1{
+		text-align: center;
+	}
+	nav{
+		position: static;
+	}
+	.titulo-secundario {
+		font-size: 1.5em;
+	}	
+	header{
+		width: 256%;
+		height: 100%;
+	}
+	
+	.header-ancora{
+		display: flex;
+		justify-content: center;
+	}
+
+	.servicos{
+		width: 256%;
+	}
+
+	footer{
+		width: 100%;
+	}
+	.fundo-localizacao{
+		width: 256%;
+	}
+
+	.ancor-menu{
+		font-size: 32px;
+	}
+	.tamanho-logo{
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+	
+
+}

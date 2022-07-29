@@ -84,3 +84,37 @@ td div:hover {
 .table{ 
 	background-color: rgb(66, 55, 55);;
 }
+
+@media screen and (max-width:480px){
+
+	th{
+		font-size: 10px;
+	}
+
+	header{
+		height: 200px;
+		text-align: center;
+		width: 290%;
+	}
+	ul{
+		margin-left: 10px;
+		margin-top: 50px;
+		position: sticky;
+	}
+	
+	.vejaHora{
+		background-color: rgba(240, 248, 255, 0);
+		border: none;
+		margin-top: 16px;
+		transform: rotate(-90deg)
+	}
+
+	table{
+		width: 275%;
+	}
+
+	footer{
+		width: 290%;
+	}
+}
+

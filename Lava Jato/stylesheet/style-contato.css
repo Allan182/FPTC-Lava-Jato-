@@ -76,7 +76,7 @@ select {
 
 .enviar {
 	width: 100%;
-	display: inline-block;
+	display: block;
 	margin: 0 50%;
 	padding: 15px 0;
 	background-color: rgb(0, 0, 0);
@@ -98,7 +98,7 @@ select {
 }
 
 table {
-	margin: 40px auto;
+	margin-bottom: 100px;
 	display: inline-block;
 }
 
@@ -209,4 +209,18 @@ td {
 textarea{
 	padding-bottom: 5px;
 	height: 260px;
+}
+
+
+@media screen and (max-width:480px){
+	.logo {
+		width:100%;
+	}
+	h1{
+		text-align: center;
+	}
+	nav{
+		position: static;
+	}
+	
 }

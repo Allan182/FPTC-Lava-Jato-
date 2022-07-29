@@ -1,15 +1,16 @@
-
 body {
-	width: 100%;
+    width: 100%;
     color: rgb(255, 255, 255);
     font-family: calibri;
-    
+
 }
-main{
+
+main {
     width: 100%;
-   
+
 }
-.posicRelatorio{
+
+.posicRelatorio {
     padding-top: 5px;
     position: relative;
     margin: 0 auto;
@@ -17,7 +18,8 @@ main{
     height: 1200px;
     background-color: rgb(98, 89, 83);
 }
-.busca{
+
+.busca {
     text-align: center;
     margin: 0 auto;
     display: block;
@@ -29,7 +31,8 @@ main{
     margin-top: 4%;
     background-color: rgb(70, 64, 49);
 }
-.resultados{
+
+.resultados {
     text-align: center;
     font-size: 16px;
     margin: 0 auto;
@@ -37,29 +40,34 @@ main{
     display: block;
     width: 500px;
     height: 68%;
-    background: linear-gradient( rgb(70, 64, 49), rgb(31, 29, 24));
+    background: linear-gradient(rgb(70, 64, 49), rgb(31, 29, 24));
     border-radius: 20px;
     margin-top: 4%;
 }
-.tituloPesq{
+
+.tituloPesq {
     padding: 20px;
     margin-top: 20px;
     font-size: 20px;
 }
-.tituloRel{
+
+.tituloRel {
     margin-top: 20px;
     font-weight: bold;
     font-size: 22px;
     padding-top: 8px;
 }
-input{
+
+input {
     margin-top: 60px;
 
 }
-hr{
+
+hr {
     margin-bottom: 30px;
 }
-#inData{
+
+#inData {
     border: none;
     border-bottom: 2px solid rgb(137, 135, 135);
     background-color: rgb(70, 64, 49);
@@ -67,7 +75,89 @@ hr{
     color: rgb(137, 135, 135);
     border-radius: 5px;
 }
-pre{
+
+pre {
     font-size: 21px;
 }
 
+@media screen and (max-width:480px) {
+
+    .caixa,
+    .banner {
+        width: auto;
+    }
+
+    .logo,
+    header {
+        width: 100%;
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    nav {
+        position: static;
+    }
+
+    .titulo-secundario {
+        font-size: 1.5em;
+    }
+
+    header {
+        width: 256%;
+        height: 100%;
+    }
+
+    .header-ancora {
+        display: flex;
+        justify-content: center;
+    }
+
+    .servicos {
+        width: 256%;
+    }
+
+    footer {
+        width: 100%;
+    }
+
+    .fundo-localizacao {
+        width: 256%;
+    }
+
+    .ancor-menu {
+        font-size: 32px;
+    }
+
+    .tamanho-logo {
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .resultados {
+        margin: 0 30px;
+        width: 30%;
+    }
+
+    .busca {
+        margin: 0 30px;
+        width: 30%;
+    }
+
+    .logo{
+        width: 250px;
+    }
+    .header-ancora{
+        width: 50px;
+        margin: 0 0;
+        padding: 0 0;
+    }
+    nav a{
+        margin: 0 0;
+        width: 2px;
+        padding: 0 0;
+        border: none;
+    }
+    
+}
