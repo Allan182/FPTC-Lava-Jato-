@@ -17,31 +17,38 @@ const horaFinal = 22
 
 const horaTotais = (horaFinal - horaInicio) * 2 + 1
 
-// Criação da Tabela pelos Vetores
+
+// Criação da Tabela pelos Vetores-----------
 function vetor() {
     var numHoras = horaInicio;  // Auxilia a verificar o vetor hora, funciona apenas no corpo da tabela;
     var horaCabe = horaInicio;  // Define as horas somente do cabeçario;
     var dias = diaInicio;  // Auxilia a verificar o vetor dia, funciona apenas no corpo da tabela;
     var diaMes = diaInicio;  // Define os dias somente na primeira coluna de cada linha do corpo;
     var auxCabecario = 0;  // Repetir e sair do while de criação do cabeçario;
-    var auxCorpo = 0;  // Serve para verificar todos vetores, tambem para repetir e sair do while de verificação do vetor;
+    var auxCorpo = 0;  // Serve para verificar todos vetores, tambem para repetir e sair do while de verificação
     
     var saida = false; // Ir pro While Atraves do Flag 
 
-    while (auxCabecario <= horaTotais - 2) { /* WHILE DE CRIAÇÃO DO CABEÇARIO */
+    var apaga = ""
+    document.querySelector('.cabeca').innerHTML = apaga
+    document.querySelector('.corpo').innerHTML = apaga
+    while (auxCabecario <= horaTotais - 1) { /* WHILE DE CRIAÇÃO DO CABEÇARIO */
         var colunasCabe = document.createElement('th');
         var cabeca = document.querySelector('.cabeca');
         colunasCabe.classList.add('vejaHora')
-        colunasCabe.textContent = Number.isInteger(horaCabe) == true ? horaCabe + ":00" : horaCabe - 0.5 + ":30"
-        horaCabe += 0.5
+        if(auxCabecario == 0){
+            colunasCabe.textContent = "Hora/" + "\n" + "Dia"
+        }else{
+            colunasCabe.textContent = Number.isInteger(horaCabe) == true ? horaCabe + ":00" : horaCabe - 0.5 + ":30"
+            horaCabe += 0.5
+        }
         cabeca.appendChild(colunasCabe);
         auxCabecario++
-    } 
-    // Utilização de Matrix para Criação de Colunas e Linhas
+    }     
+    // Utilização de Matrix para Criação de Colunas e Linhas, cria corpo
     for (var linha = 0; linha < diaTotais; linha++) { 
         var corpo = document.querySelector('.corpo');
         var linhaCorpo = document.createElement('tr'); // Cria linhas
-
 
         for (var coluna = 0; coluna < horaTotais; coluna++) {
             var colunasCorpo = document.createElement('td'); // Cria colunas
@@ -98,5 +105,14 @@ function vetor() {
         corpo.appendChild(linhaCorpo); /* Adicionando Linhas e Colunas na Tabela */
     }
 }
+btBonito.addEventListener("click", agendar)
+btBonito.addEventListener("click", vetor)
+
+
+
+
+
+
+
 
 

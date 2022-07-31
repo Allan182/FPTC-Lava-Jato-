@@ -11,6 +11,7 @@ var btBonito = document.getElementById("btBonito");
 var outSaidaTrue = document.getElementById("outSaidaTrue");
 var outSaidaFalse = document.getElementById("outSaidaFalse");
 
+
 function agendar() {
     outSaidaTrue.textContent = "";
     outSaidaFalse.textContent = "";
@@ -109,3 +110,4 @@ function agendar() {
         }
     }
 }
+
