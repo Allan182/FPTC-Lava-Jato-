@@ -1,15 +1,65 @@
-
-body{
-    font-family: calibri;
+body {
+	font-family: calibri;
 }
 
 html {
 	scroll-behavior: smooth;
 }
 
-.banner {
-	width: 100%;
+
+.carrosel {
+	width: 1000px;
+	box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+	margin: 0 auto;
+	overflow: hidden;
+	height: 667px;
+}
+
+.carrosel ul {
+	width: 3000px;
+	display: flex;
 	height: auto;
+}
+
+.carrosel li {
+	position: relative;
+	animation: slide 15s infinite ease-out;
+}
+
+@keyframes slide {
+
+	0% {
+		left: 0px
+	}
+
+	20% {
+		left: 0px
+	}
+
+	30% {
+		left: -1000px
+	}
+
+	50% {
+		left: -1000px;
+	}
+
+	60% {
+		left: -2000px
+	}
+
+	90% {
+		left: -2000px
+	}
+
+	100% {
+		left: 0px
+	}
+
+}
+
+.fundo-carrosel {
+	background: url(../imagens-home/bg-home.jpg);
 }
 
 .localizacao {
@@ -30,6 +80,7 @@ html {
 	width: 100%;
 	height: 300px;
 	background: url("../imagens-geral/bg.jpg");
+	border-top: 0.1px solid rgba(255, 255, 255, 0.253);
 }
 
 .lav-externa {
@@ -41,7 +92,7 @@ html {
 
 .tex_Lav_ext {
 	position: absolute;
-	margin-left: 5%;
+	margin-left: 4.6%;
 	top: 70%;
 	color: white;
 	font-size: 20px;
@@ -57,10 +108,9 @@ html {
 
 .tex_Lav_int {
 	position: absolute;
-	margin-left: 25%;
+	margin-left: 24.75%;
 	top: 70%;
-	color: white;
-	font-size: 20px;
+
 
 }
 
@@ -73,10 +123,9 @@ html {
 
 .tex_Lav_com {
 	position: absolute;
-	margin-left: 45%;
+	margin-left: 44.2%;
 	top: 70%;
-	color: white;
-	font-size: 20px;
+
 }
 
 .lav-Ext_c_Pol {
@@ -88,10 +137,9 @@ html {
 
 .tex_LavExt_c_Pol {
 	position: absolute;
-	margin-left: 65%;
+	margin-left: 64.6%;
 	top: 70%;
-	color: white;
-	font-size: 20px;
+
 	text-align: center;
 }
 
@@ -104,10 +152,8 @@ html {
 
 .tex_LavExt_compl_c_Pol {
 	position: absolute;
-	margin-left: 85%;
+	margin-left: 84.3%;
 	top: 70%;
-	color: white;
-	font-size: 20px;
 	text-align: center;
 }
 
@@ -120,67 +166,79 @@ iframe {
 	scroll-margin-top: 7.5em;
 }
 
-body{
-    font-family: calibri;
+body {
+	font-family: 'calibri';
 }
 
-@media screen and (max-width:480px){
-	 .caixa,  .banner {
+.ancor-servicos {
+	text-decoration: none;
+	color: white;
+	font-size: 24px;
+}
+
+.ancor-servicos:hover {
+	transition: 0.5s;
+	border-radius: 5px;
+	color: #ddff00;
+	background-color: rgba(255, 255, 0, 0.041);
+}
+
+
+@media screen and (max-width:480px) {
+
+	.caixa,
+	.banner {
 		width: auto;
 	}
-	.logo, header  {
-		width:100%;
+
+	.logo,
+	header {
+		width: 100%;
 	}
-	h1{
+
+	h1 {
 		text-align: center;
 	}
-	nav{
+
+	nav {
 		position: static;
 	}
+
 	.titulo-secundario {
 		font-size: 1.5em;
-	}	
-	header{
+	}
+
+	header {
 		width: 256%;
 		height: 100%;
 	}
-	
-	.header-ancora{
+
+	.header-ancora {
 		display: flex;
 		justify-content: center;
 	}
 
-	.servicos{
+	.servicos {
 		width: 256%;
 	}
 
-	footer{
+	footer {
 		width: 100%;
 	}
-	.fundo-localizacao{
+
+	.fundo-localizacao {
 		width: 256%;
 		text-align: center;
 	}
 
-	.ancor-menu{
+	.ancor-menu {
 		font-size: 32px;
 	}
-	.tamanho-logo{
+
+	.tamanho-logo {
 		margin-left: 0;
 		margin-bottom: 20px;
 	}
-	
+
 
 }
-
-
-
-
-
-
-
-
-
-
-
-

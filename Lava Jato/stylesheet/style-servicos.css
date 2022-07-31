@@ -1,100 +1,27 @@
+main {
+
+    background-color: rgba(173, 173, 173, 0.664);
+}
+
 .servicos {
     margin: 0 auto;
     position: relative;
     background-color: rgb(38, 40, 39);
     width: 60%;
+    height: 1800px;
+    box-shadow: 5px 50px 50px 10px rgba(53, 53, 53, 0.863);
+    border-left: 1px solid rgba(255, 255, 255, 0.514);
+    border-right: 1px solid rgba(255, 255, 255, 0.514); ;
+
 }
 
 .titulo {
-    font-size: 40px;
-}
-
-.titulo-servicos {
-    text-align: center;
-    background-color: grey;
-    padding: 2%;
-    font-size: 24px;
-    font-weight: bold;
-
-}
-
-.lav-externa {
-    width: 23%;
-    float: left;
-    margin: 3% 3.5% 2% 5%;
-}
-
-.tex_Lav_ext {
-    padding-top: 15px;
-    font-size: 24px;
-    text-align: justify;
-    margin-right: 5%;
-    margin-top: 5%;
-}
-
-.lav-interna {
-    width: 23%;
-    float: right;
-    margin: 3% 3.5% 2% 5%;
-
-}
-
-.tex_Lav_int {
-    padding-top: 25px;
-    font-size: 24px;
-    text-align: justify;
-    margin-left: 5%;
-    margin-top: 5%;
-
-}
-
-.lav-completa {
-    width: 23%;
-    float: left;
-    margin: 3% 3.5% 2% 5%;
-
-}
-
-.tex_Lav_com {
-    padding-top: 25px;
-    font-size: 24px;
-    text-align: justify;
-    margin-right: 5%;
-    margin-top: 5%;
-
-}
-
-.lav-Ext_c_Pol {
-    width: 23%;
-    float: right;
-    margin: 3% 3.5% 2% 5%;
-}
-
-.tex_LavExt_c_Pol {
-    padding-top: 15px;
-    font-size: 24px;
-    text-align: justify;
-    margin-left: 5%;
-    margin-top: 5%;
-}
-
-.lav-com_c_Pol {
-    width: 23%;
-    float: left;
-    margin: 3% 3.5% 2% 5%;
-}
-
-.tex_LavExt_compl_c_Pol {
-    padding-top: 25px;
-    font-size: 24px;
-    text-align: justify;
-    margin-right: 5%;
-    margin-top: 5%;
-    padding-bottom: 5%;
+    font-size: 45px;
 }
 
 body {
     color: white;
+    font-family: calibri;
 }
 
 strong {
@@ -104,24 +31,57 @@ strong {
     margin-bottom: 10px;
 }
 
-.secction-lav-interna {
-    background-color: grey;
-    padding-bottom: 15px;
+.servicos-secctons-left {
+    width: 100%;
+    height: 19%;
+    background-color: black;
 }
 
-.secction-lav-ext {
+.servicos-secctons-rigth {
+    width: 100%;
+    height: 19%;
     background-color: grey;
-    padding-bottom: 25px;
 }
 
-.titulo-servicos-testados {
-    font-size: 25px;
+.img-servicos-left {
+    height: 75%;
+    float: left;
+    margin-top: 3.7%;
+    margin-left: 2%;
+    margin-right: 15px;
+}
+
+.img-servicos-rigth {
+    height: 75%;
+    float: right;
+    margin-top: 3.7%;
+    margin-right: 2%;
+    margin-left: 15px;
+}
+
+.text-servicos {
+    font-size: 29px;
+    text-align: justify;
+    margin: 0% 2%;
+    padding-top: 5%;
+}
+
+.titulo-servicos-prestados {
+    font-size: 35px;
+    margin-bottom: 2%;
     font-weight: bold;
+
 }
 
-body {
-    font-family: calibri;
+.titulo-servicos {
+    text-align: center;
+    background-color: grey;
+    padding: 2%;
+    font-size: 32px;
+    font-weight: bold;
+    height: 2.5%;
 }
+
 
 @media screen and (max-width:480px) {
 
@@ -163,6 +123,7 @@ body {
 
     footer {
         width: 256%;
+
     }
 
     .fundo-localizacao {
@@ -177,28 +138,40 @@ body {
         margin-left: 0;
         margin-bottom: 20px;
     }
-    .lav-externa, .lav-interna, .lav-com_c_Pol{
+
+    .lav-externa,
+    .lav-interna,
+    .lav-com_c_Pol {
         margin-top: 0;
         width: 20%;
     }
 
-    .tex_LavExt_c_Pol{
+    .tex_LavExt_c_Pol {
         padding: 50px 0;
         margin-top: 20px;
     }
-    .lav-completa{
+
+    .lav-completa {
         margin: 0 20px;
         width: 20%;
     }
-    .lav-Ext_c_Pol{
+
+    .lav-Ext_c_Pol {
         margin-top: 0;
         width: 20%;
         padding-top: 35px;
     }
-    .tex_LavExt_c_Pol, .tex_LavExt_compl_c_Pol, .tex_Lav_com, .tex_Lav_int, .tex_Lav_ext{
+
+    .tex_LavExt_c_Pol,
+    .tex_LavExt_compl_c_Pol,
+    .tex_Lav_com,
+    .tex_Lav_int,
+    .tex_Lav_ext {
         font-size: 31px;
     }
-    .lav-interna{
+
+    .lav-interna {
         margin-top: 50px;
+
     }
 }

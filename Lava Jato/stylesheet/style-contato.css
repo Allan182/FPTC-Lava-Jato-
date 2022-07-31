@@ -1,15 +1,12 @@
-
-
 /* Seletores do corpo --------------------------------------*/
 
-body{
-    font-family: 'calibri';
+body {
+	font-family: 'calibri';
 }
 
 form {
 	width: 940px;
 	margin: 0 auto;
-	padding: 40px 0;
 	text-align: center;
 	display: inline-block;
 }
@@ -30,6 +27,7 @@ fieldset {
 	padding: 10px;
 
 }
+
 .input-block {
 	display: block;
 	margin-bottom: 20px;
@@ -42,12 +40,15 @@ fieldset {
 	background-color: rgb(36, 36, 36);
 	color: white;
 }
-input::placeholder{
-	color:rgba(255, 255, 255, 0.336)
-}
-textarea::placeholder{
+
+input::placeholder {
 	color: rgba(255, 255, 255, 0.336)
 }
+
+textarea::placeholder {
+	color: rgba(255, 255, 255, 0.336)
+}
+
 .imagem-contato {
 	width: 100%;
 	height: auto;
@@ -89,12 +90,12 @@ select {
 	cursor: pointer;
 	margin-bottom: 35px;
 	margin-top: 30px;
-	
+
 }
 
 .enviar:hover {
 	transition: 0.5s;
-	background-color: rgb(194, 126, 0);
+	background-color: rgba(255, 115, 0, 0.966);
 }
 
 table {
@@ -170,8 +171,15 @@ td {
 	height: 475px;
 	position: relative;
 	padding-bottom: 38%;
+
 }
 
+.form-table {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+
+}
 
 .caixa-endereço {
 	width: 50%;
@@ -180,7 +188,7 @@ td {
 	color: rgb(255, 255, 255);
 }
 
-.caixa-contat0{
+.caixa-contat0 {
 	text-align: center;
 	color: white;
 	font-weight: bold;
@@ -193,34 +201,51 @@ td {
 	border-radius: 3px;
 	border-radius: 5px;
 }
-.titulo-contat0{
+
+.titulo-contat0 {
 	font-size: 35px;
 	padding: 2px 10px;
 }
-.tela-contato-quadrado{
+
+.tela-contato-quadrado {
 	width: 75%;
 	margin: 0 auto;
 	height: auto;
-	background: linear-gradient(180deg , rgba(151, 151, 151, 0.445), rgb(80, 80, 80));
+	background: linear-gradient(180deg, rgba(151, 151, 151, 0.445), rgb(80, 80, 80));
 	border: 1px solid black;
 	margin-top: 15px;
 	margin-bottom: 15px;
 }
-textarea{
+
+body {
+	background-color: rgba(211, 211, 211, 0.397);
+}
+
+textarea {
 	padding-bottom: 5px;
 	height: 260px;
 }
 
+.ancor-menu {
+	text-decoration: none;
+	color: white;
+}
 
-@media screen and (max-width:480px){
+.ancor-menu:hover {
+	color: yellow;
+}
+
+@media screen and (max-width:480px) {
 	.logo {
-		width:100%;
+		width: 100%;
 	}
-	h1{
+
+	h1 {
 		text-align: center;
 	}
-	nav{
+
+	nav {
 		position: static;
 	}
-	
+
 }

@@ -14,7 +14,7 @@ function relatorio() {
     } else {
 
         for (var aux = 0; aux < vetDia.length; aux++) {
-            
+
                     if (vetDia[aux] == data) {
                         hora = Number.isInteger(vetHora[aux]) == true? vetHora[aux] + ":00" : vetHora[aux] - 0.5 + ":30"
                         

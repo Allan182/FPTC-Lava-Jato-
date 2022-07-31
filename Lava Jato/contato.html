@@ -42,13 +42,15 @@
 
             <div class="caixa-endereço">
                 <div class="caixa-rua">
-                    <p class="texto-caixa-contato"> Rua Mazolli de Fiore, 455. </p>
+                    <p class="texto-caixa-contato"> <a href="index.html#local" class="ancor-menu"> Rua Mazolli de Fiore,
+                            455. </a> </p>
                 </div>
                 <div class="caixa-centro">
-                    <p class="texto-caixa-contato"> Centro </p>
+                    <p class="texto-caixa-contato"> <a href="index.html#local" class="ancor-menu"> Centro. </a> </p>
                 </div>
                 <div>
-                    <p class="texto-caixa-contato"> Santa Teresa - ES </p>
+                    <p class="texto-caixa-contato"> <a href="index.html#local" class="ancor-menu"> Santa Teresa - ES
+                        </a></p>
                 </div>
             </div>
 
@@ -75,81 +77,83 @@
 
     <main>
         <section class="tela-contato-quadrado">
+
             <div class="caixa-contat0">
                 <h1 class="titulo-contat0">Entre em Contato por Aqui! </h1>
             </div>
 
+            <div class="form-table">
+                <form action="mailto:allan.furlani@hotmail.com" method="POST" enctype="text/plain" class="form-action">
 
-            <form action="mailto:allan.furlani@hotmail.com" method="POST" enctype="text/plain" class="form-action">
+                    <input type="text" id="nomeSobrenome" class="input-block" placeholder="Nome e Sobrenome" name="Nome"
+                        required>
 
-                <input type="text" id="nomeSobrenome" class="input-block" placeholder="Nome e Sobrenome" name="Nome"
-                    required>
+                    <input type="email" id="email" class="input-block" required placeholder="E-mail" name="Email">
 
-                <input type="email" id="email" class="input-block" required placeholder="E-mail" name="Email">
+                    <input type="tel" id="telefone" class="input-block" required placeholder="Telefone" name="Telefone">
 
-                <input type="tel" id="telefone" class="input-block" required placeholder="Telefone" name="Telefone">
+                    <input type="tel" id="telefone" class="input-block" required placeholder="Assunto" name="Assunto">
 
-                <input type="tel" id="telefone" class="input-block" required placeholder="Assunto" name="Assunto">
-
-                <textarea name="" id="mensagem" cols="30" rows="10" class="input-block" required placeholder="Mensagem"
-                    name="Mensagem">
+                    <textarea name="" id="mensagem" cols="30" rows="10" class="input-block" required
+                        placeholder="Mensagem" name="Mensagem">
                 </textarea>
 
-                <div class="class-form-enviar">
-                    <input type="submit" value="Envie Seu Pedido Aqui! " class="enviar">
-                </div>
+                    <div class="class-form-enviar">
+                        <input type="submit" value="Envie Seu Pedido Aqui! " class="enviar">
+                    </div>
 
-            </form>
+                </form>
 
-            <table class="table-form">
+                <table class="table-form">
 
-                <thead>
-                    <tr>
-                        <th colspan="2">Horários de Funcionamento</th>
-                    </tr>
-                    <tr>
-                        <th>Dia</th>
-                        <th>Horário</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Segunda-feira</td>
-                        <td>7h às 22h</td>
-                    </tr>
-                    <tr>
-                        <td>Terça-feira</td>
-                        <td>7h às 22h</td>
-                    </tr>
-                    <tr>
-                        <td>Quarta-feira</td>
-                        <td>7h às 22h</td>
-                    </tr>
-                    <tr>
-                        <td>Quinta-feira</td>
-                        <td>7h às 22h</td>
-                    </tr>
-                    <tr>
-                        <td>Sexta-feira</td>
-                        <td>7h às 22h</td>
-                    </tr>
-                    <tr>
-                        <td>Sábado</td>
-                        <td>7h às 22h</td>
-                    </tr>
-                    <tr>
-                        <td>Domingo</td>
-                        <td>7h às 22h</td>
-                    </tr>
-                </tbody>
-            </table>
+                    <thead>
+                        <tr>
+                            <th colspan="2">Horários de Funcionamento</th>
+                        </tr>
+                        <tr>
+                            <th>Dia</th>
+                            <th>Horário</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Segunda-feira</td>
+                            <td>7h às 22h</td>
+                        </tr>
+                        <tr>
+                            <td>Terça-feira</td>
+                            <td>7h às 22h</td>
+                        </tr>
+                        <tr>
+                            <td>Quarta-feira</td>
+                            <td>7h às 22h</td>
+                        </tr>
+                        <tr>
+                            <td>Quinta-feira</td>
+                            <td>7h às 22h</td>
+                        </tr>
+                        <tr>
+                            <td>Sexta-feira</td>
+                            <td>7h às 22h</td>
+                        </tr>
+                        <tr>
+                            <td>Sábado</td>
+                            <td>7h às 22h</td>
+                        </tr>
+                        <tr>
+                            <td>Domingo</td>
+                            <td>7h às 22h</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
 
         </section>
     </main>
 
     <footer>
         <img src="imagens-geral/Lg Att 2.0.svg">
-        <p class="copyright">&copy; Copyright Car Wash </p>
+        <p class="copyright">&copy; Copyright Clean Wash </p>
     </footer>
 </body>
 
