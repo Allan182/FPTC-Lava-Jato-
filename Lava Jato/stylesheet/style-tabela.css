@@ -1,21 +1,141 @@
-
+/* Geral */
 body {
 	
-	background-color: rgb(66, 55, 55);
+	background-color: rgb(30, 27, 22);
 	font-family: calibri;
 	
 }
-
 header {
 	position: relative;
 }
+label{
+	cursor: pointer;
+	padding: 3.5px;
+}
+h1{
+	color: rgba(224, 135, 19, 0.877);
+	font-size: 35px;
+	
+
+}
+h2{
+	color: #c1c2ba;
+	font-size: 25px;
+	margin: 40px;
+}
+input{
+	margin-right: 40px;
+	
+}
+p{
+	color: #eeefe7;
+}
+/* Agendamento */
+section{
+	width: 100%;
+	background-color: rgb(30, 27, 22);
+}
+.Agendamento{
+	position: absolute;
+	text-align: center;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-top: 80px;
+	width: 95%;
+	height: 100%;
+	font-size: 17px;
+	color: rgba(224, 135, 19, 0.877);
+}
+.degrade{ 
+	margin-top: 0;
+	height: 950px;
+	background: linear-gradient(rgb(60, 96, 143), rgb(30, 27, 22));
+}
+.escoServicos{
+	margin-top: 70px;
+	padding-top: 15px;
+	height: 600px;
+	border: 2px solid rgb(30, 29, 36);
+	background-color: rgb(15, 15, 15);
+	border-radius: 7px;
+	box-shadow: -5px 5px 5px rgb(8, 5, 5);
+}
+div p a{
+	color: #a5a5a0;
+	font-size: 20px;
+}
+input[type=radio]{
+	all:unset;
+	margin: 0;
+	margin-left: 8px;
+	color: #b1c916
+}
+input[type=radio]:checked + label {
+	
+	padding: 3.5px;
+	transition: 0.5s;
+	border: 0.1px solid rgba(255, 255, 0, 0.823);
+	border-radius: 5px;
+	color: #ddff00;
+	background-color: rgba(255, 255, 0, 0.041);
+  }
+  .nomeCompl{
+	border: none;
+    border-bottom: 2px solid rgb(137, 135, 135);
+    background-color: rgb(15, 15, 15);
+    width: 20%;
+    color: rgb(137, 135, 135);
+
+  }
+  .data{
+	border: none;
+    border-bottom: 2px solid rgb(137, 135, 135);
+    background-color: rgb(15, 15, 15);
+    width: 5%;
+    color: rgb(137, 135, 135);
+  }
+  .btBonito{
+	cursor: pointer;
+	font-size: 20px;
+	padding: 5px;
+	background-color: rgba(224, 135, 19, 0.877);
+	margin-top: 60px;
+	width: 50%;
+	border-radius: 15px;
+	height: 35px;
+	border: 2px solid rgb(30, 29, 36);
+  }
+  .flutuante{
+	border: 2px solid rgb(30, 29, 36);
+	background-color: rgb(15, 15, 15);
+	border-radius: 7px;
+	box-shadow: -5px 5px 5px rgb(8, 5, 5);
+  }
+  #outSaidaFalse{
+	display: inline-block;
+	margin: 0;
+	margin-top: 21px;
+	color: red;
+	width: 40%;
+  }
+  #outSaidaTrue{
+	margin: 0;
+	margin-top: 21px;
+	color: rgb(0, 255, 0);
+	font-size: 25px;
+  }
+/* Tabela */
+
+
+
 
 table {
 	margin-left: 7%;
 	margin-bottom: 30px;
-	margin-top: 30px;
 	width: 85%;
+	box-shadow: -15px 15px 10px rgb(0, 0, 0);
 	background-color: rgb(255, 255, 255);
+	border-radius: 4px;
 	position: relative;
 }
 
@@ -81,9 +201,7 @@ td div:hover {
 .tamanho{
 	font-size: 20px;
 }
-.table{ 
-	background-color: rgb(66, 55, 55);;
-}
+
 
 @media screen and (max-width:480px){
 

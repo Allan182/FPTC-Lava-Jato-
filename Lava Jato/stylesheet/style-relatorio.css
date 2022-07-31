@@ -4,34 +4,27 @@ body {
     font-family: calibri;
 
 }
+header {
+	position: relative;
+}
 
 main {
     width: 100%;
 
 }
 
-.posicRelatorio {
+.posicRelatorio { 
     padding-top: 5px;
     position: relative;
-    margin: 0 auto;
-    width: 940px;
+    margin: 20px auto 0;
+    width: 800px;
     height: 1200px;
     background-color: rgb(98, 89, 83);
+    
 }
-
-.busca {
-    text-align: center;
-    margin: 0 auto;
-    display: block;
-    width: 300px;
-    height: 250px;
-    border-radius: 60px;
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 4%;
-    background-color: rgb(70, 64, 49);
+.linha{
+    text-decoration: underline;
 }
-
 .resultados {
     text-align: center;
     font-size: 16px;
@@ -69,9 +62,10 @@ hr {
 
 #inData {
     border: none;
-    border-bottom: 2px solid rgb(137, 135, 135);
-    background-color: rgb(70, 64, 49);
-    width: 35px;
+    outline:none;
+    text-decoration: underline;
+    background-color: rgba(70, 64, 49, 0);
+    width: 40px;
     color: rgb(137, 135, 135);
     border-radius: 5px;
 }

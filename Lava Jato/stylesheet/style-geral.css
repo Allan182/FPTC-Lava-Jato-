@@ -73,12 +73,12 @@ nav a:hover {
 /* Seletores do rodapé --------------------------------------*/
 
 footer {
-	position: relative;
+	position: absolute;
+	width: 100%;
 	margin-top: -3.5px;
 	text-align: center;
 	background: url("../imagens-geral/bg.jpg");
 	padding: 40px 0;
-
 }
 
 .copyright {
