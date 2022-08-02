@@ -30,6 +30,7 @@ input{
 p{
 	color: #eeefe7;
 }
+
 /* Agendamento */
 section{
 	width: 100%;
@@ -46,7 +47,7 @@ section{
 	font-size: 17px;
 	color: rgba(224, 135, 19, 0.877);
 }
-.degrade{ 
+.corFundoDegrade{ 
 	margin-top: 0;
 	height: 950px;
 	background: linear-gradient(rgb(60, 96, 143), rgb(30, 27, 22));
@@ -94,7 +95,7 @@ input[type=radio]:checked + label {
     width: 5%;
     color: rgb(137, 135, 135);
   }
-  .btBonito{
+  .btAGENDAR{
 	cursor: pointer;
 	font-size: 20px;
 	padding: 5px;
@@ -105,7 +106,7 @@ input[type=radio]:checked + label {
 	height: 35px;
 	border: 2px solid rgb(30, 29, 36);
   }
-  .flutuante{
+  .box-shadowAgem{
 	border: 2px solid rgb(30, 29, 36);
 	background-color: rgb(15, 15, 15);
 	border-radius: 7px;
@@ -166,7 +167,7 @@ th {
 	max-width: 6px;
 }
 
-.cor2 {
+.corAzul {
 	background-color: rgb(76, 136, 169);
 }
 
@@ -201,7 +202,6 @@ td div:hover {
 .tamanho{
 	font-size: 20px;
 }
-
 
 @media screen and (max-width:480px){
 

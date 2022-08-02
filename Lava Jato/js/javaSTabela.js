@@ -4,18 +4,19 @@
    Descrição: Utilizar Vetores e Sistema de Matrizes 
    para organizar e estruturar uma tabela via Java Script. */
 
+var btAGENDAR = document.getElementById("btAGENDAR");
 
 // Defina o dia inicial e final da tabela:
-const diaInicio = 1
-const diaFinal = 31
+const diaInicio = 1;
+const diaFinal = 31;
 
-const diaTotais = diaFinal - diaInicio + 1
+const diaTotais = diaFinal - diaInicio + 1;
 
 // Defina a hora inicial e final da tabela:
-const horaInicio = 7
-const horaFinal = 22
+const horaInicio = 7;
+const horaFinal = 22;
 
-const horaTotais = (horaFinal - horaInicio) * 2 + 1
+const horaTotais = (horaFinal - horaInicio) * 2 + 1;
 
 
 // Criação da Tabela pelos Vetores-----------
@@ -24,58 +25,55 @@ function vetor() {
     var horaCabe = horaInicio;  // Define as horas somente do cabeçario;
     var dias = diaInicio;  // Auxilia a verificar o vetor dia, funciona apenas no corpo da tabela;
     var diaMes = diaInicio;  // Define os dias somente na primeira coluna de cada linha do corpo;
-    var auxCabecario = 0;  // Repetir e sair do while de criação do cabeçario;
+    var auxCabecario = true;
     var auxCorpo = 0;  // Serve para verificar todos vetores, tambem para repetir e sair do while de verificação
+    var cabecarioTermino = 0;
+    var saida = false; // Ir pro While Atraves do Flag
     
-    var saida = false; // Ir pro While Atraves do Flag 
+    var apaga = "";//apaga tabela ------- 
+    document.querySelector('.cabeca').innerHTML = apaga //apaga tabela ------- 
+    document.querySelector('.corpo').innerHTML = apaga //apaga tabela ------- 
 
-    var apaga = ""
-    document.querySelector('.cabeca').innerHTML = apaga
-    document.querySelector('.corpo').innerHTML = apaga
-    while (auxCabecario <= horaTotais - 1) { /* WHILE DE CRIAÇÃO DO CABEÇARIO */
-        var colunasCabe = document.createElement('th');
-        var cabeca = document.querySelector('.cabeca');
-        colunasCabe.classList.add('vejaHora')
-        if(auxCabecario == 0){
-            colunasCabe.textContent = "Hora/" + "\n" + "Dia"
-        }else{
-            colunasCabe.textContent = Number.isInteger(horaCabe) == true ? horaCabe + ":00" : horaCabe - 0.5 + ":30"
-            horaCabe += 0.5
-        }
-        cabeca.appendChild(colunasCabe);
-        auxCabecario++
-    }     
-    // Utilização de Matrix para Criação de Colunas e Linhas, cria corpo
-    for (var linha = 0; linha < diaTotais; linha++) { 
+    // Utilização de estrutura Matrix para Criação de Colunas e Linhas
+    for (var linha = 0; linha < diaTotais; linha++) {
         var corpo = document.querySelector('.corpo');
         var linhaCorpo = document.createElement('tr'); // Cria linhas
-
         for (var coluna = 0; coluna < horaTotais; coluna++) {
             var colunasCorpo = document.createElement('td'); // Cria colunas
+            if(cabecarioTermino < horaTotais){
+                var colunasCabe = document.createElement('th');
+                var cabeca = document.querySelector('.cabeca');
+                colunasCabe.classList.add('vejaHora');
+                if (auxCabecario == true) {
+                    colunasCabe.textContent = "Hora/" + "\n" + "Dia";
+                    auxCabecario = false;
+                } else {
+                    colunasCabe.textContent = Number.isInteger(horaCabe) == true ? horaCabe + ":00" : horaCabe - 0.5 + ":30";
+                    horaCabe += 0.5;
+                }
+                cabeca.appendChild(colunasCabe);
+                cabecarioTermino++;
+            }
             if (coluna == 0) {
                 var colunasCorpo = document.createElement('th');
                 colunasCorpo.textContent = diaMes;
                 diaMes++;
                 colunasCorpo.classList.add("thead");
+                
             } else {
                 auxCorpo = 0;     /* Reset Para o Laço While */
-                while (saida == false && auxCorpo < vetDia.length) { /* WHILE DE VERIFICAÇÃO DO VETOR */
-                    if (vetHora[auxCorpo] == numHoras) { /* Verificação das Horas */
+                while (saida == false && auxCorpo < vetDia.length) { /* WHILE DE VERIFICAÇÃO DO VETOR PARA CADA COLUNA */
+
+                    if (vetHora[auxCorpo] == numHoras) { /* Verificação das Horas referente ao valor de aux */
                         if (dias == vetDia[auxCorpo]) { /* Verificação dos Dias */
+                            saida = true;
                             var divFantasma = document.createElement('div')
                             divFantasma.textContent = vetNome[auxCorpo] + " " + vetSobrenome[auxCorpo] + " - " + vetServico[auxCorpo];
                             divFantasma.classList.add("cor");
                             colunasCorpo.appendChild(divFantasma)
-                            colunasCorpo.classList.add("cor");
-                            saida = true;
-
+                            colunasCorpo.classList.add("cor");                           
                             switch (vetServico[auxCorpo]) { /* Verificação de Serviço */
-
                                 case "Lavagem completa":
-                                    colunasCorpo.colSpan = 2;
-                                    coluna++;
-                                    numHoras += 0.5;
-                                    break;
                                 case "Lavagem externa com polimento":
                                     colunasCorpo.colSpan = 2;
                                     coluna++;
@@ -92,7 +90,7 @@ function vetor() {
                         }
                     } else { /* Caso ele não Encontre a Hora ele Soma */
                         auxCorpo++;
-                        colunasCorpo.classList.add("cor2");
+                        colunasCorpo.classList.add("corAzul");
                     }
                 }
                 numHoras += 0.5;
@@ -100,13 +98,13 @@ function vetor() {
             }
             linhaCorpo.appendChild(colunasCorpo) /* Adicionando Coluna Dentro da Linha */
         }
-        numHoras = 7;   /* Resetar Hora Sempre  que Trocar a Linha */
+        numHoras = horaInicio;   /* Resetar Hora Sempre  que Trocar a Linha */
         dias++;  /* Soma um Dia a cada Linha - Ex: Dia 1, Dia 2 Etc ... */
         corpo.appendChild(linhaCorpo); /* Adicionando Linhas e Colunas na Tabela */
     }
 }
-btBonito.addEventListener("click", agendar)
-btBonito.addEventListener("click", vetor)
+btAGENDAR.addEventListener("click", agendar);
+btAGENDAR.addEventListener("click", vetor);
 
 
 

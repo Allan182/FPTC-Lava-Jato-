@@ -1,41 +1,43 @@
 body {
     width: 100%;
-    color: rgb(255, 255, 255);
+    color: white;
     font-family: calibri;
-
+    background: linear-gradient(rgb(179, 178, 178), rgb(17, 17, 17));
 }
+
 header {
-	position: relative;
+    position: relative;
 }
 
 main {
     width: 100%;
-
+    background: url(../imagens-relatorio/black-bg.jpg);
+    background-size: 100% 100%;
 }
 
-.posicRelatorio { 
+.posicRelatorio {
     padding-top: 5px;
     position: relative;
-    margin: 20px auto 0;
+    margin: 0 auto;
     width: 800px;
     height: 1200px;
-    background-color: rgb(98, 89, 83);
-    
 }
-.linha{
-    text-decoration: underline;
+
+.linha {
+    font-size: 20px;
 }
+
 .resultados {
     text-align: center;
-    font-size: 16px;
+    font-size: 18px;
     margin: 0 auto;
     font-weight: 300;
     display: block;
     width: 500px;
-    height: 68%;
-    background: linear-gradient(rgb(70, 64, 49), rgb(31, 29, 24));
-    border-radius: 20px;
-    margin-top: 4%;
+    height: 80%;
+    background: url(../imagens-relatorio/bg-relatorio.jpg);
+    border-radius: 10px;
+    margin-top: 15%;
 }
 
 .tituloPesq {
@@ -45,33 +47,49 @@ main {
 }
 
 .tituloRel {
-    margin-top: 20px;
     font-weight: bold;
-    font-size: 22px;
-    padding-top: 8px;
+    font-size: 24px;
+    padding: 20px 0;
 }
 
 input {
-    margin-top: 60px;
+    margin-top: 30px;
+    margin-left: 20px;
+    background: rgba(215, 215, 215, 0.763);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 7px;
+    color: rgb(0, 0, 0);
 
 }
 
-hr {
-    margin-bottom: 30px;
+input:hover {
+    color: black;
+    background: yellow;
 }
 
 #inData {
+    margin: 0;
     border: none;
-    outline:none;
-    text-decoration: underline;
+    outline: none;
+    margin-left: 5px;
+    border-bottom: 2px solid rgb(255, 255, 255);
     background-color: rgba(70, 64, 49, 0);
-    width: 40px;
-    color: rgb(137, 135, 135);
-    border-radius: 5px;
+    width: 35px;
+    margin-bottom: 40px;
+    padding: 0;
+    color: aliceblue;
+    font-size: 17px;
+    border-radius: 0;
 }
 
 pre {
     font-size: 21px;
+}
+
+strong {
+    text-decoration: none;
+    font-weight: bold;
 }
 
 @media screen and (max-width:480px) {
@@ -83,7 +101,8 @@ pre {
 
     .logo,
     header {
-        width: 100%;
+        width: 256%;
+        height: 100%;
     }
 
     h1 {
@@ -98,10 +117,6 @@ pre {
         font-size: 1.5em;
     }
 
-    header {
-        width: 256%;
-        height: 100%;
-    }
 
     .header-ancora {
         display: flex;
@@ -139,19 +154,21 @@ pre {
         width: 30%;
     }
 
-    .logo{
+    .logo {
         width: 250px;
     }
-    .header-ancora{
+
+    .header-ancora {
         width: 50px;
         margin: 0 0;
         padding: 0 0;
     }
-    nav a{
+
+    nav a {
         margin: 0 0;
         width: 2px;
         padding: 0 0;
         border: none;
     }
-    
+
 }

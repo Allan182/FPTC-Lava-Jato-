@@ -1,3 +1,4 @@
+// Conexão html para javaScript
 var rdLavIntena = document.getElementById("rdLavIntena");
 var rdLavExterna = document.getElementById("rdLavExterna");
 var rdLavCompleta = document.getElementById("rdLavCompleta");
@@ -7,16 +8,10 @@ var inHora = document.getElementById("inHora");
 var inData = document.getElementById("inData");
 var inNome = document.getElementById("inNome");
 var inSobrenome = document.getElementById("inSobrenome");
-var btBonito = document.getElementById("btBonito");
 var outSaidaTrue = document.getElementById("outSaidaTrue");
 var outSaidaFalse = document.getElementById("outSaidaFalse");
 
-
 function agendar() {
-    outSaidaTrue.textContent = "";
-    outSaidaFalse.textContent = "";
-    var vetPosicao = [];
-    var agenda = "";
     var LavIntena = rdLavIntena.checked;
     var LavExterna = rdLavExterna.checked;
     var LavCompleta = rdLavCompleta.checked;
@@ -26,10 +21,14 @@ function agendar() {
     var horaInicio = Number(inHora.value);
     var data = Number(inData.value);
     var nome = inNome.value;
-    var sobrenome = inSobrenome.value  ; 
+    var sobrenome = inSobrenome.value;
+    outSaidaTrue.textContent = "";
+    outSaidaFalse.textContent = "";
+    var agenda = "";
     var valido = false;
     var horaVaga = true;
     var numValido = true;
+    var vetPosicao = [];
     
     if(LavComPoli == true){
         if(horaInicio > 20.5){
@@ -48,21 +47,28 @@ function agendar() {
         outSaidaFalse.textContent ="*Informe seu Nome/Sobrenome";
     }else{
         if(Number.isInteger(horaInicio) == false){
-            if(Number.isInteger(horaInicio - 0.5) == true){
-                numValido = true;
-            }else{
+            if(Number.isInteger(horaInicio - 0.5) == false){
                 numValido = false;
-                outSaidaFalse.textContent ="*Hora invalida. Permitidos Ex: 7, 7.5, 8, 8.5 ... 21.5";
             }
         }
         if(numValido == true){
-            for(var aux2 = 0; aux2 < vetDia.length; aux2++){
-                if (vetDia[aux2] == data) {
-                    vetPosicao.push(vetHora[aux2]) ;
+            for(var auxPosicao = 0; auxPosicao <= vetDia.length; auxPosicao++){
+                if (vetDia[auxPosicao] == data) {
+                    switch(vetServico[auxPosicao]){
+                        case "Lavagem completa":
+                        case "Lavagem externa com polimento":
+                            vetPosicao.push(vetHora[auxPosicao] + 0.5)
+                            break
+                        case "Lavagem completa com polimento":
+                            vetPosicao.push(vetHora[auxPosicao] + 0.5)
+                            vetPosicao.push(vetHora[auxPosicao] + 1)
+                            break
+                    }
+                    vetPosicao.push(vetHora[auxPosicao]);
                 }
             }
             for(var aux = 0; aux <= vetPosicao.length && valido == false; aux++){
-                for(var i=0; i<vetPosicao.length; i++) {
+                for(var i=0; i<=vetPosicao.length; i++) {
                     if(vetPosicao[i] == horaFinal) {
                         horaVaga = false;
                     }
@@ -106,7 +112,7 @@ function agendar() {
                 outSaidaFalse.textContent = "*O Dia/Hora que foi selecionado não esta disponivel para o tipo de lavamgem selecionado, por favor comsulte a tabela abaixo ou os tipos de serviços";
             }
         }else{
-            outSaidaFalse.textContent = "*O tempo da sua lavagem excede o nosso tempo de funcionamento"
+            outSaidaFalse.textContent ="*Hora invalida. Permitidos Ex: 7, 7.5, 8, 8.5 ... 21.5 ou excede o horario de funcionamento";
         }
     }
 }

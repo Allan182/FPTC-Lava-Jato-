@@ -34,60 +34,57 @@
             </nav>
         </div>
     </header>
-    <!--<input type="text" value="nome" id="inNome">
-    <input type="text" value="sobrenome" id="inSobrenome">
-    <input type="number" value="dia" id="inData">
-    <input type="number" value="hora" id="inHora">
-    <input type="text" value="serviço" id="inAgenda">
-    <input type="button" id="btRefaz" value="0000"> <p id="outSaida"></p>-->
     <main>
-        <section class="degrade">
+        <section class="corFundoDegrade">
             <div class="Agendamento">
-                <div class ="flutuante">
-                <h1>AGENDE A LAVAGEM DO SEU CARRO</h1>
-                <p><a href="servicos.html">Tipos de lavagem</a></p>
+                <div class="box-shadowAgem">
+                    <h1>AGENDE A LAVAGEM DO SEU CARRO</h1>
+                    <p><a href="servicos.html">Tipos de lavagem</a></p>
                 </div>
                 <form class="escoServicos">
                     <h2>Escolha o tipo de lavagem:</h2>
-                    <input type="radio" name="tipoLavagem" value="Lavagem interna" id="rdLavIntena">
+
+                    <input type="radio" name="tipoLavagem" value="Lavagem interna" id="rdLavIntena" required>
                     <label for="rdLavIntena">Lavagem interna</label>
-    
-                    <input type="radio" name="tipoLavagem" value="Lavagem externa" id="rdLavExterna">
+
+                    <input type="radio" name="tipoLavagem" value="Lavagem externa" id="rdLavExterna" required>
                     <label for="rdLavExterna">Lavagem externa</label>
-    
-                    <input type="radio" name="tipoLavagem" value="Lavagem completa" id="rdLavCompleta">
+
+                    <input type="radio" name="tipoLavagem" value="Lavagem completa" id="rdLavCompleta" required>
                     <label for="rdLavCompleta">Lavagem completa</label>
-    
-                    <input type="radio" name="tipoLavagem" value="Lavagem externa com polimento" id="rdLavExPoli">
+
+                    <input type="radio" name="tipoLavagem" value="Lavagem externa com polimento" id="rdLavExPoli"
+                        required>
                     <label for="rdLavExPoli">Lavagem externa com polimento</label>
-    
-                    <input type="radio" name="tipoLavagem" value="Lavagem completa com polimento" id="rdLavComPoli">
+
+                    <input type="radio" name="tipoLavagem" value="Lavagem completa com polimento" id="rdLavComPoli"
+                        required>
                     <label for="rdLavComPoli">Lavagem completa com polimento</label>
 
                     <h2>Qual e o dia e a hora que deseja agendar?</h2>
 
                     <p>
-                        DIA:<input type="number" id="inData" class="data" max="31" min="1">
-                        HORA:<input type="number" id="inHora" class="data" max="21.5" min="7">
+                        DIA:<input type="number" id="inData" class="data" max="31" min="1" required>
+                        HORA:<input type="number" id="inHora" class="data" max="21.5" min="7" required>
                     </p>
                     <h2>Quem é você?</h2>
                     <p>
-                        Nome:<input type="text" id="inNome" class="nomeCompl" pattern="[^0-9]+">
-                        Sobrenome:<input type="text" id="inSobrenome" class="nomeCompl" pattern="[^0-9]+">
+                        Nome:<input type="text" id="inNome" class="nomeCompl" required>
+                        Sobrenome:<input type="text" id="inSobrenome" class="nomeCompl" required>
                     </p>
-                    
-                    <p><input type="button" value="AGENDAR" class="btBonito" id="btBonito"></p>
+
+                    <p> <input type="button" value="AGENDAR" class="btAGENDAR" id="btAGENDAR" return false> </p>
                     <p id="outSaidaFalse"></p>
                     <p id="outSaidaTrue"></p>
                 </form>
-                
+
             </div>
         </section>
-        <section >
+        <section>
             <table>
                 <thead class="thead">
                     <tr>
-                        <th colspan="35" class="tamanho">AGENDAMENTO PARA O MÊS DE AGOSTO</th>
+                        <th colspan="31" class="tamanho">AGENDAMENTO PARA O MÊS DE AGOSTO</th>
                     </tr>
                     <tr class="cabeca">
                     </tr>
@@ -100,10 +97,11 @@
     </main>
     <footer>
         <img src="imagens-geral/Lg Att 2.0.svg">
-        <p class="copyright">&copy; Copyright Car Wash </p>
+        <p class="copyright">&copy; Copyright Clean Wash </p>
     </footer>
 </body>
 <script src="js/vetores.js"></script>
 <script src="js/interacao.js"></script>
 <script src="js/javaSTabela.js"></script>
+
 </html>

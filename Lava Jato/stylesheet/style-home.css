@@ -223,7 +223,7 @@ body {
 	}
 
 	footer {
-		width: 100%;
+		width: 256%;
 	}
 
 	.fundo-localizacao {
@@ -240,5 +240,29 @@ body {
 		margin-bottom: 20px;
 	}
 
+	
 
+	.fundo-carrosel {
+		width: 256%;
+	}
+
+
+	.carrosel {
+		width: 1000px;
+		box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.7);
+		margin: 0 auto;
+		overflow: hidden;
+		height: 670px;
+		padding: 180px 0;
+	}
+
+	.carrosel ul {
+		width: 3000px;
+		display: flex;
+		height: auto;
+	}
+
+	header{
+		height: 240px;
+	}
 }

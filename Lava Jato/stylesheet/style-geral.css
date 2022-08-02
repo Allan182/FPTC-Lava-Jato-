@@ -16,11 +16,7 @@ header {
 	border-bottom: 0.1px solid rgba(85, 85, 85, 0.116);
 	z-index: 3;
 }
-.teste{
-	width: 90%;
-	height: 100%;
-	margin-left: 5%;
-}
+
 .caixa {
 	position: relative;
 	width: 100%;
