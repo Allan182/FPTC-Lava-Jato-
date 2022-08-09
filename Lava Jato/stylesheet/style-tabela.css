@@ -1,42 +1,48 @@
 /* Geral */
 body {
-	
+
 	background-color: rgb(30, 27, 22);
 	font-family: calibri;
-	
+
 }
+
 header {
 	position: relative;
 }
-label{
+label {
 	cursor: pointer;
 	padding: 3.5px;
 }
-h1{
+
+h1 {
 	color: rgba(224, 135, 19, 0.877);
 	font-size: 35px;
-	
+
 
 }
-h2{
+
+h2 {
 	color: #c1c2ba;
 	font-size: 25px;
 	margin: 40px;
 }
-input{
+
+input {
 	margin-right: 40px;
-	
+
 }
-p{
+
+p {
 	color: #eeefe7;
 }
 
 /* Agendamento */
-section{
+section {
 	width: 100%;
 	background-color: rgb(30, 27, 22);
 }
-.Agendamento{
+
+.Agendamento {
 	position: absolute;
 	text-align: center;
 	margin-left: 2.5%;
@@ -47,12 +53,14 @@ section{
 	font-size: 17px;
 	color: rgba(224, 135, 19, 0.877);
 }
-.corFundoDegrade{ 
+
+.corFundoDegrade {
 	margin-top: 0;
 	height: 950px;
 	background: linear-gradient(rgb(60, 96, 143), rgb(30, 27, 22));
 }
-.escoServicos{
+
+.escoServicos {
 	margin-top: 70px;
 	padding-top: 15px;
 	height: 600px;
@@ -61,41 +69,48 @@ section{
 	border-radius: 7px;
 	box-shadow: -5px 5px 5px rgb(8, 5, 5);
 }
-div p a{
+
+div p a {
 	color: #a5a5a0;
 	font-size: 20px;
 }
-input[type=radio]{
-	all:unset;
+
+input[type=radio] {
+	all: unset;
 	margin: 0;
 	margin-left: 8px;
 	color: #b1c916
 }
-input[type=radio]:checked + label {
-	
+
+input[type=radio]:checked+label {
+
 	padding: 3.5px;
 	transition: 0.5s;
 	border: 0.1px solid rgba(255, 255, 0, 0.823);
 	border-radius: 5px;
 	color: #ddff00;
 	background-color: rgba(255, 255, 0, 0.041);
-  }
-  .nomeCompl{
-	border: none;
-    border-bottom: 2px solid rgb(137, 135, 135);
-    background-color: rgb(15, 15, 15);
-    width: 20%;
-    color: rgb(137, 135, 135);
+	
+}
 
-  }
-  .data{
+.nomeCompl {
 	border: none;
-    border-bottom: 2px solid rgb(137, 135, 135);
-    background-color: rgb(15, 15, 15);
-    width: 5%;
-    color: rgb(137, 135, 135);
-  }
-  .btAGENDAR{
+	border-bottom: 2px solid rgb(137, 135, 135);
+	background-color: rgb(15, 15, 15);
+	width: 20%;
+	color: rgb(137, 135, 135);
+
+}
+
+.data {
+	border: none;
+	border-bottom: 2px solid rgb(137, 135, 135);
+	background-color: rgb(15, 15, 15);
+	width: 14%;
+	color: rgb(137, 135, 135);
+}
+
+.btAGENDAR {
 	cursor: pointer;
 	font-size: 20px;
 	padding: 5px;
@@ -105,26 +120,30 @@ input[type=radio]:checked + label {
 	border-radius: 15px;
 	height: 35px;
 	border: 2px solid rgb(30, 29, 36);
-  }
-  .box-shadowAgem{
+}
+
+.box-shadowAgem {
 	border: 2px solid rgb(30, 29, 36);
 	background-color: rgb(15, 15, 15);
 	border-radius: 7px;
 	box-shadow: -5px 5px 5px rgb(8, 5, 5);
-  }
-  #outSaidaFalse{
+}
+
+#outSaidaFalse {
 	display: inline-block;
 	margin: 0;
 	margin-top: 21px;
 	color: red;
 	width: 40%;
-  }
-  #outSaidaTrue{
+}
+
+#outSaidaTrue {
 	margin: 0;
 	margin-top: 21px;
 	color: rgb(0, 255, 0);
 	font-size: 25px;
-  }
+}
+
 /* Tabela */
 
 
@@ -154,7 +173,8 @@ td {
 	color: rgb(223, 217, 217);
 	border: 0ex;
 }
-.vejaHora{
+
+.vejaHora {
 	position: sticky;
 	top: 0;
 	width: auto;
@@ -199,40 +219,41 @@ td div:hover {
 	transform: scale(2, 2);
 	background-color: rgb(81, 48, 11);
 }
-.tamanho{
+
+.tamanho {
 	font-size: 20px;
 }
 
-@media screen and (max-width:480px){
+@media screen and (max-width:480px) {
 
-	th{
+	th {
 		font-size: 10px;
 	}
 
-	header{
+	header {
 		height: 200px;
 		text-align: center;
 		width: 290%;
 	}
-	ul{
+
+	ul {
 		margin-left: 10px;
 		margin-top: 50px;
 		position: sticky;
 	}
-	
-	.vejaHora{
+
+	.vejaHora {
 		background-color: rgba(240, 248, 255, 0);
 		border: none;
 		margin-top: 16px;
 		transform: rotate(-90deg)
 	}
 
-	table{
+	table {
 		width: 275%;
 	}
 
-	footer{
+	footer {
 		width: 290%;
 	}
 }
-

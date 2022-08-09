@@ -1,3 +1,7 @@
+/* Autores: Abner, Allan e Elder.
+   Versão: 1.2.
+   Data: 25/07/2022.
+   Descrição: Utilizar Vetores para fazer o relatorio diario. */
 var inData = document.getElementById("inData");
 var btProcurar = document.getElementById("btProcurar");
 var outSaida = document.getElementById("autSaida");
